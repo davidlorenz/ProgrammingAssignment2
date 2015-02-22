@@ -2,13 +2,12 @@
 #    20150222: Coursera R Programming course, assignment 2
 
 
-## makeCacheMatrix -- 
-#    returns list of four functions to set/get value of matrix
+## makeCacheMatrix -- returns list of four functions to set/get value of matrix 
 #    set/get inverse of matrix
 #    in "cache" (outside current working environment)
 #   
-#    copied from R programming assn 2
-#    e.g. "makeVector" w/ only changes to function/object names
+#    copied from R programming assn 2 example "makeVector"
+#      changed class of input object, function/object names
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -27,8 +26,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve -- finds inverse for matrix using solve(), unless 
 #    solution already cached 
-#    copied from R programming assn 2
-#    e.g. "cachemean", changed from mean() to solve()
+#    copied from R programming assn 2 example "cachemean"
+#      changed from mean() to solve()
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
